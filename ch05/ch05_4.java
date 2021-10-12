@@ -22,6 +22,18 @@ public class ch05_4 {
 
 }
 
+
+	for (int i=start;i<=end;i++) {
+			if (i%mul==0)
+				total+=i;
+		}
+----->  while(i<=end){
+		if (i%mul==0)
+			total+=i;
+		i++;
+	}
+
+
 # 합계의 시작값 ==> 100
 # 합계의 끝값 ==> 200
 # 배수 ==> 4
