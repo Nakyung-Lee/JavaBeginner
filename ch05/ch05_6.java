@@ -19,6 +19,20 @@ public class ch05_6 {
 
 }
 
+	#for문 ---> while문		
+		int sc;
+		int i=0;
+		while(true) {
+			sc=str.charAt(i)-'0';
+			for (int k=0;k<sc;k++) {
+				System.out.print("*");
+			}
+			System.out.printf("\n");
+			if(++i>str.length()-1)
+				break;
+			sc=str.charAt(i);
+		}
+
 // 숫자를 여러 개 입력 : 5914
 // *****
 // *********
