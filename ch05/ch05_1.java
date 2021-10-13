@@ -17,6 +17,20 @@ public class ch05_1 {
 
 }
 
+		# 배열로 값 저장하고 한번에 출력
+		int aa[][]=new int[10][10];
+		
+		for (int i=2;i<10;i++) {
+			for (int j=2;j<10;j++){
+				aa[j][i]=i*j;
+			}
+		}
+		for (int i=2;i<10;i++) {
+			for (int j=2;j<10;j++){
+				System.out.printf("%dX%d= %2d  ",j,i,aa[j][i]);
+			}
+			System.out.println();
+		}
 
 # #제2단# #제3단# #제4단# #제5단# #제6단# #제7단# #제8단# #제9단#
 # 2X 1= 2 3X 1= 3 4X 1= 4 5X 1= 5 6X 1= 6 7X 1= 7 8X 1= 8 9X 1= 9
