@@ -15,14 +15,16 @@ public class ch09_03 {
 		short num;
 		char dupl = 'N';
 		System.out.print("추첨된 로또 번호 : ");
-		for (int i = 0; i < 6; i++) {
+		for (int i = 0; i < 6;) {
 			num=getNumber();
 			for (int k = 0; k < 6; k++) { // 1 ~ 45까지 랜덤 숫자 구하기 
 				if (rand[k]==num)
 					dupl='Y';
 			}
 			if (dupl=='N')
-				rand[i]=num;
+				rand[i++]=num; //중복아니면 그때 num 저장하고 그때 index 늘린다 
+			else
+				dupl='N';
 		}
 		for (int i = 0; i < 6; i++) {
 			System.out.print(rand[i] + " "); 		
