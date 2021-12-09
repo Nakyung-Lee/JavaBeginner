@@ -8,7 +8,7 @@ public class ch09_01 {
 		for (int i=0;i<str.length();i++) {
 			if (str.charAt(i)!=' ')
 				result+=str.substring(i,i+1);
-        #result+=str.charAt(i);
+        //result+=str.charAt(i);
 		}
 		System.out.println("원문자열 = > [" + str + "]");
 		System.out.println("공백제거 문자열 = > [" + result + "]");
